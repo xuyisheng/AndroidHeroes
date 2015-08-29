@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+    <group
+        android:name="sun"
+        android:pivotX="60"
+        android:pivotY="50"
+        android:rotation="0">
+
+        <path
+            android:name="path_sun"
+            android:fillColor="@android:color/holo_blue_light"
+            android:pathData="
+                M 50,50
+                a 10,10 0 1,0 20,0
+                a 10,10 0 1,0 -20,0" />
+
+        <group
+            android:name="earth"
+            android:pivotX="75"
+            android:pivotY="50"
+            android:rotation="0">
+
+            <path
+                android:name="path_earth"
+                android:fillColor="@android:color/holo_orange_dark"
+                android:pathData="
+                    M 70,50
+                    a 5,5 0 1,0 10,0
+                    a 5,5 0 1,0 -10,0" />
+
+            <group>
+                <path
+                    android:fillColor="@android:color/holo_green_dark"
+                    android:pathData="
+                        M 90,50
+                        m -5 0
+                        a 4,4 0 1,0 8 0
+                        a 4,4 0 1,0 -8,0" />
+            </group>
+        </group>
+    </group>
+</vector>

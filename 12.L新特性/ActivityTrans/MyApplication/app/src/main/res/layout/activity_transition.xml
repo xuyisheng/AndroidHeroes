@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="explode"
+        android:text="explode" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="slide"
+        android:text="slide" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="fade"
+        android:text="fade" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:transitionName="share"
+        android:onClick="share"
+        android:text="share" />
+
+    <Button
+        android:id="@+id/fab_button"
+        android:layout_width="56dp"
+        android:transitionName="fab"
+        android:layout_height="56dp"
+        android:background="@drawable/ripple_round"
+        android:elevation="5dp"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XPuzzle</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="puzzle_main_type">选择难度：</string>
+    <string name="puzzle_main_steps">步数：</string>
+    <string name="puzzle_main_img">原        图</string>
+    <string name="puzzle_main_reset">重        置</string>
+    <string name="puzzle_main_back">返        回</string>
+    <string name="puzzle_main_time">时间：</string>
+    <string name="puzzle_main_type_selected">2 X 2</string>
+    <string name="puzzle_main_record">查看记录</string>
+    <string name="puzzle_main_more">了解更多</string>
+
+</resources>

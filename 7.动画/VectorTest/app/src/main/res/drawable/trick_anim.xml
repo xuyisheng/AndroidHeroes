@@ -1,0 +1,9 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/trick">
+    <target
+        android:name="path1"
+        android:animation="@anim/anim_path1" />
+    <target
+        android:name="path2"
+        android:animation="@anim/anim_path2" />
+</animated-vector>

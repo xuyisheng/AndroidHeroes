@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <!-- 填充的颜色 -->
+            <solid android:color="#33444444" />
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+            <!-- 填充的颜色 -->
+            <solid android:color="#3EC5FF" />
+        </shape>
+    </item>
+
+</selector>

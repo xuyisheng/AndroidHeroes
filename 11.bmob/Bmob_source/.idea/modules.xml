@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bmob_source.iml" filepath="$PROJECT_DIR$/Bmob_source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bmob/bmob.iml" filepath="$PROJECT_DIR$/bmob/bmob.iml" />
+    </modules>
+  </component>
+</project>
