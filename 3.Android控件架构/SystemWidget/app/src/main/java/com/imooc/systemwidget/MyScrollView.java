@@ -94,8 +94,7 @@ public class MyScrollView extends ViewGroup {
                 mLastY = y;
                 break;
             case MotionEvent.ACTION_UP:
-                mEnd = getScrollY();
-                int dScrollY = mEnd - mStart;
+                int dScrollY = checkAlignment();
                 if (dScrollY > 0) {
                     if (dScrollY < mScreenHeight / 3) {
                         mScroller.startScroll(
@@ -122,7 +121,16 @@ public class MyScrollView extends ViewGroup {
         postInvalidate();
         return true;
     }
-
+	private int checkAlignment() {
+        int mEnd=getScrollY();
+        int lastPrev=mEnd%mScreenHeight;
+        int lastNext=mScreenHeight-lastPrev;
+        if (lastPrev>lastNext){
+            return -lastNext;
+        }else{
+            return lastPrev;
+        }
+    }
     @Override
     public void computeScroll() {
         super.computeScroll();
