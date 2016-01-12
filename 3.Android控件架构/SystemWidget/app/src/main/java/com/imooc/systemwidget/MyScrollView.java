@@ -122,13 +122,15 @@ public class MyScrollView extends ViewGroup {
         return true;
     }
 	private int checkAlignment() {
-        int mEnd=getScrollY();
-        int lastPrev=mEnd%mScreenHeight;
-        int lastNext=mScreenHeight-lastPrev;
-        if (lastPrev>lastNext){
-            return -lastNext;
-        }else{
+        int mEnd = getScrollY();
+        boolean isUp = ((mEnd - mStart) > 0) ? true : false;
+        int lastPrev = mEnd % mScreenHeight;
+        int lastNext = mScreenHeight - lastPrev;
+        if (isUp) {
+            //向上的
             return lastPrev;
+        } else {
+            return -lastNext;
         }
     }
     @Override
