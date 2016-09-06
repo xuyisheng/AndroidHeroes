@@ -40,12 +40,12 @@ public class ScrollHideListView extends Activity {
                     }
                     if (direction == 1) {
                         if (mShow) {
-                            toolbarAnim(1);//show
+                            toolbarAnim(1);//hide
                             mShow = !mShow;
                         }
                     } else if (direction == 0) {
                         if (!mShow) {
-                            toolbarAnim(0);//hide
+                            toolbarAnim(0);//show
                             mShow = !mShow;
                         }
                     }
