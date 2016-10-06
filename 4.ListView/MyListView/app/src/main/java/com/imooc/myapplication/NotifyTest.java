@@ -25,9 +25,6 @@ public class NotifyTest extends Activity {
         mListView = (ListView) findViewById(R.id.listView);
         mAdapter = new NotifyAdapter(this, mData);
         mListView.setAdapter(mAdapter);
-        for (int i = 0; i < mListView.getChildCount(); i++) {
-            View view = mListView.getChildAt(i);
-        }
     }
 
     public void btnAdd(View view) {
